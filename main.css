@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* cor de fundo da header e tamanho interno */
+header {
+    padding: 6px 6px 6px 6px;
+    background-color: rgb(5, 85, 138);
+}
+/* lista de opcoes na mesma linha e margem */
+header nav li {
+    display: inline;
+    margin: 8px;
+}
+/* cor das letras e retirar sublinhado */
+header a, h1 {
+    color: aliceblue;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+}
+header h1 {
+    font-size: 50px;
+}
+header a {
+    font-size: 20px;
+}
+header a:hover {
+    color: black;
+    font-weight: bold;
+}
+/* Limitar ate qtd de px e limitar ate 100% da largura e deixar a margem centralizada */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container p, h2 {
+    margin-right: 700px;
+    margin-top: 10px;
+    text-align: justify;
+    font-family: 'Acme', sans-serif;
+}
+.container img {
+    width: 30%;
+    margin-left: 800px;
+    position: absolute;
+}
+/* espacamento entre os itens */ 
+.contato {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+/* Os inputs um abaixo do outro, tamanho, espaço entre eles, tamanho interno */
+form input, textarea, button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    margin-left: 9px;
+    padding: 8px;
+}
+/* bloqueia o campo para nao ser alterado na pagina */
+form textarea {
+    resize: none;
+    height: 150px;
+}
+/* cor do botao e formato */ 
+form button {
+    background-color:  rgb(5, 85, 138);
+    border: none;
+    color: aliceblue;
+}
+/* efeito do botao */
+form button:hover {
+    background-color:  rgb(5, 85, 138);
+    font-size: larger;
+    cursor: pointer;
+    color: rgb(10, 11, 11);
+}
+/* forma e cor da borda dos inputs */
+input:focus textarea:focus {
+    outline-color:  rgb(5, 85, 138);
+}
+footer {
+    background-color:  rgb(5, 85, 138);
+    display: flex;
+    color: aliceblue;
+    padding: 2px 0;
+    margin-top: 30px;
+}
